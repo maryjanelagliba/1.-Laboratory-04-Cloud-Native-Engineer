@@ -1,1 +1,8 @@
+| **Category**            | **Virtual Machines (VMs)**                                                              | **Containers**                                                                               |
+| ----------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Architecture**        | Each VM includes a full **Guest OS** on top of a hypervisor.                            | Containers **share the Host OS kernel** while keeping applications isolated.                 |
+| **Boot Time**           | Usually takes **minutes** to start because the Guest OS must boot.                      | Usually starts in **seconds** because there is no separate OS to boot.                       |
+| **Resource Efficiency** | **Heavy / High RAM usage** because each VM requires its own OS and resources.           | **Lightweight / Low RAM usage** because containers share the Host OS.                        |
+| **Isolation Level**     | Provides **hardware-level isolation**, giving stronger separation between environments. | Provides **process-level isolation**, separating applications while sharing the host kernel. |
 
+Containers can help the client run web applications faster and with lower resource usage than traditional VMs. Since containers share the host operating system, they require less RAM and storage while starting in seconds. They also make it easier to deploy, update, and scale web applications. For web applications that need flexibility and efficient resource usage, containers can be a practical alternative to traditional VMs.
